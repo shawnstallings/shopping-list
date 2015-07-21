@@ -80,12 +80,6 @@ button.add-button {
 	margin: 1.5rem 0;
 }
 
-.ind-location {
-	width: 12%;
-	display: inline-block;
-	margin: 0 auto;
-}
-
 .entry {
 	background-color: white;
 	width: 100%;
@@ -111,8 +105,10 @@ button.add-button {
 	margin: 0;
 }
 
-.item-list {
-	vertical-align: bottom;
+.ind-location {
+	width: 12%;
+	display: inline-block;
+	margin: 0 auto;
 }
 
 .ind-item {
@@ -163,4 +159,56 @@ button.done-buttonused {
 button.delete-button {
 	background-color: red;
 		width: 100%;
+}
+
+@media (max-width: 500px) {
+	.location {
+		width: 25%;
+	}
+	.item {
+		width: 30%;
+	}
+	.note {
+		width: 23%;
+	}
+	button {font-size: .75rem;
+	}
+	.entry {
+		font-size: .75rem;
+	}
+	.ind-location {
+		width: 22%;
+	}
+	.ind-item {
+		width: 30%;
+	}
+	.ind-note {
+		width: 23%;
+	}
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+	.location {
+		width: 20%;
+	}
+	.item {
+		width: 25%;
+	}
+	.note {
+		width: 18%;
+	}
+	button {font-size: .80rem;
+	}
+	.entry {
+		font-size: .80rem;
+	}
+	.ind-location {
+		width: 17%;
+	}
+	.ind-item {
+		width: 25%;
+	}
+	.ind-note {
+		width: 18%;
+	}
 }
