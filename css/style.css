@@ -1,0 +1,166 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+	background-color: #2b78e4;
+	font-family: "Oxygen", "Helvetica", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+}
+
+div.logo {
+	content: url("../images/lightning-logo.png");
+	width: 383px;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 3rem;
+}
+
+.heading {
+	color: yellow;
+	font-size: .90rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+.location {
+	width: 15%;
+	display: inline-block;
+	margin: 0 auto;		
+}
+
+.item {
+	width: 20%;
+	display: inline-block;
+	margin: 0 auto;		
+}
+
+.note {
+	width: 13%;
+	display: inline-block;
+	margin: 0 auto;		
+}
+
+.add {
+	width: 3.5%;
+	display: inline-block;
+	margin: 0 auto;		
+}
+
+button {
+	background-color: white;
+	vertical-align: bottom;
+	width: 100%;
+	height: 1.5rem;
+	font-size: .90rem;
+	font-weight: 700;
+	text-align: left;
+}
+
+button.add-button {
+	background-color: yellow;
+	width: 100%;
+}
+
+.tip {
+	color: yellow;
+	font-size: .90rem;
+	font-weight: 700;
+	margin: 1.5rem 0;
+}
+
+.ind-location {
+	width: 12%;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.entry {
+	background-color: white;
+	width: 100%;
+	height: 1.5rem;
+	font-size: .90rem;
+	font-weight: 700;
+	text-align: left;
+	padding-left: .25rem;
+	border: solid 2px silver;
+	margin: 0;
+}
+
+.entryused {
+	background-color: white;
+	color: silver;
+	width: 100%;
+	height: 1.5rem;
+	font-size: .90rem;
+	font-weight: 700;
+	text-align: left;
+	padding-left: .25rem;
+	border: solid 2px silver;
+	margin: 0;
+}
+
+.item-list {
+	vertical-align: bottom;
+}
+
+.ind-item {
+	width: 20%;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.ind-note {
+	width: 13%;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.done {
+	width: 4%;
+	display: inline-block;
+	margin: 0 auto;		
+	vertical-align: bottom;
+}
+
+button {
+	background-color: white;
+	vertical-align: bottom;
+	width: 100%;
+	height: 1.5rem;
+	font-size: .90rem;
+	text-align: left;
+}
+
+button.done-button {
+	background-color: yellow;
+	width: 100%;
+}
+
+button.done-buttonused {
+	background-color: gray;
+	width: 100%;
+}
+
+.delete {
+	width: 5%;
+	display: inline-block;
+	margin: 0 auto;	
+	vertical-align: bottom;	
+}
+
+button.delete-button {
+	background-color: red;
+		width: 100%;
+}
