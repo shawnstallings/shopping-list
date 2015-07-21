@@ -20,7 +20,7 @@ body {
 }
 
 div.logo {
-	content: url("../images/lightning-logo.png");
+	content: url("../images/lightning_logo.png");
 	width: 383px;
 	height: auto;
 	margin: 0 auto;
