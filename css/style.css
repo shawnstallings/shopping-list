@@ -12,7 +12,7 @@ html {
 }
 
 body {
-	background-color: #2b78e4;
+	background-color: #2B78E4;
 	font-family: "Oxygen", "Helvetica", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -29,6 +29,7 @@ div.logo {
 
 .heading {
 	color: yellow;
+	text-shadow: 2px 2px 4px #101947;
 	font-size: .90rem;
 	font-weight: 700;
 	text-align: center;
@@ -52,13 +53,13 @@ div.logo {
 	margin: 0 auto;		
 }
 
-.add {
-	width: 3.5%;
+.list-area {
 	display: inline-block;
-	margin: 0 auto;		
+	width: 55%;
+	margin: .25rem auto;
 }
 
-button {
+input {
 	background-color: white;
 	vertical-align: bottom;
 	width: 100%;
@@ -66,100 +67,93 @@ button {
 	font-size: .90rem;
 	font-weight: 700;
 	text-align: left;
+	padding-left: .25rem;
+	box-shadow: 2px 2px 4px #101947;
 }
 
-button.add-button {
-	background-color: yellow;
+select {
+	background-color: white;
+	vertical-align: bottom;
 	width: 100%;
-}
-
-.tip {
-	color: yellow;
+	height: 1.5rem;
 	font-size: .90rem;
 	font-weight: 700;
-	margin: 1.5rem 0;
+	text-align: left;
+	box-shadow: 2px 2px 4px #101947;
+}
+
+button#addbutton {
+	background-color: yellow;
+	width: 50px;
+	height: 1.5rem;
+	font-size: .90rem;
+	font-weight: 700;
+	text-align: center;
+	display: block;
+	box-shadow: 2px 2px 4px #101947;
+	margin: .5rem auto;
+}
+
+.trash {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.2rem;
+	color: #FF0000;
+	text-shadow: 1px 1px silver;
+	float: left;
+	padding: 0 0 0 .5rem;
+	margin: 0;
+}
+
+.check {
+	display: inline-block;
+	vertical-align: bottom;
+	font-size: 1.2rem;
+	color: #00FF00;
+	text-shadow: 1px 1px silver;
+	float: right;
+	padding: 0 .5rem 0 0;
+	margin: 0;
 }
 
 .entry {
 	background-color: white;
-	width: 100%;
-	height: 1.5rem;
+	vertical-align: middle;
+	display: inline-block;
+	width: 88%;
+	height: 1.8rem;
+	font-size: .90rem;
+	font-weight: 700;
+	text-align: center;
+	border: solid 2px silver;
+	box-shadow: 2px 2px 4px #101947;
+	margin: .25rem auto;
+}
+
+.details {
+	background-color: white;
+	vertical-align: middle;
+	display: inline-block;
+	width: 88%;
 	font-size: .90rem;
 	font-weight: 700;
 	text-align: left;
-	padding-left: .25rem;
-	border: solid 2px silver;
-	margin: 0;
+	margin: 0 auto;
 }
 
-.entryused {
+.details-done {
 	background-color: white;
+	vertical-align: middle;
+	display: inline-block;
+	width: 88%;
+	font-size: .90rem;
+	font-weight: 700;
 	color: silver;
-	width: 100%;
-	height: 1.5rem;
-	font-size: .90rem;
-	font-weight: 700;
 	text-align: left;
-	padding-left: .25rem;
-	border: solid 2px silver;
-	margin: 0;
-}
-
-.ind-location {
-	width: 12%;
-	display: inline-block;
 	margin: 0 auto;
 }
 
-.ind-item {
-	width: 20%;
-	display: inline-block;
-	margin: 0 auto;
-}
 
-.ind-note {
-	width: 13%;
-	display: inline-block;
-	margin: 0 auto;
-}
-
-.done {
-	width: 4%;
-	display: inline-block;
-	margin: 0 auto;		
-	vertical-align: bottom;
-}
-
-button {
-	background-color: white;
-	vertical-align: bottom;
-	width: 100%;
-	height: 1.5rem;
-	font-size: .90rem;
-	text-align: left;
-}
-
-button.done-button {
-	background-color: yellow;
-	width: 100%;
-}
-
-button.done-buttonused {
-	background-color: gray;
-	width: 100%;
-}
-
-.delete {
-	width: 5%;
-	display: inline-block;
-	margin: 0 auto;	
-	vertical-align: bottom;	
-}
-
-button.delete-button {
-	background-color: red;
-		width: 100%;
-}
 
 @media (max-width: 500px) {
 	.location {
@@ -212,3 +206,8 @@ button.delete-button {
 		width: 18%;
 	}
 }
+
+
+/*  background-size: cover;
+	background: -webkit-linear-gradient(#2B78E4, #2B7850); /* For Safari 5.1 to 6.0 */
+   
