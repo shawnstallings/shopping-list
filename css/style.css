@@ -63,11 +63,13 @@ input {
 	background-color: white;
 	vertical-align: bottom;
 	width: 100%;
-	height: 1.5rem;
+	height: 100%;
 	font-size: .90rem;
 	font-weight: 700;
+	padding: 2px 4px;
+	border: 0;
+	border-radius: 2px;
 	text-align: left;
-	padding-left: .25rem;
 	box-shadow: 2px 2px 4px #101947;
 }
 
@@ -75,19 +77,24 @@ select {
 	background-color: white;
 	vertical-align: bottom;
 	width: 100%;
-	height: 1.5rem;
+	height: 100%;
 	font-size: .90rem;
 	font-weight: 700;
+	padding: 1px;
+	border: 0;
+	border-radius: 2px;
 	text-align: left;
 	box-shadow: 2px 2px 4px #101947;
 }
 
 button#addbutton {
-	background-color: yellow;
+	background-color: #E8D10D;
 	width: 50px;
 	height: 1.5rem;
 	font-size: .90rem;
 	font-weight: 700;
+	border: 0;
+	border-radius: 2px;
 	text-align: center;
 	display: block;
 	box-shadow: 2px 2px 4px #101947;
@@ -97,22 +104,22 @@ button#addbutton {
 .trash {
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 1.2rem;
-	color: #FF0000;
+	font-size: 1rem;
+	color: #1B4C91;
 	text-shadow: 1px 1px silver;
 	float: left;
-	padding: 0 0 0 .5rem;
+	padding: 0 0 0 .25rem;
 	margin: 0;
 }
 
 .check {
 	display: inline-block;
 	vertical-align: bottom;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	color: #00FF00;
 	text-shadow: 1px 1px silver;
 	float: right;
-	padding: 0 .5rem 0 0;
+	padding: 0 .25rem 0 0;
 	margin: 0;
 }
 
@@ -121,11 +128,11 @@ button#addbutton {
 	vertical-align: middle;
 	display: inline-block;
 	width: 88%;
-	height: 1.8rem;
 	font-size: .90rem;
 	font-weight: 700;
+	padding: 1px 0px;
 	text-align: center;
-	border: solid 2px silver;
+	border-radius: 2px;
 	box-shadow: 2px 2px 4px #101947;
 	margin: .25rem auto;
 }
@@ -134,9 +141,10 @@ button#addbutton {
 	background-color: white;
 	vertical-align: middle;
 	display: inline-block;
-	width: 88%;
+	width: 90%;
 	font-size: .90rem;
 	font-weight: 700;
+	padding: 1px 0px;
 	text-align: left;
 	margin: 0 auto;
 }
@@ -145,69 +153,154 @@ button#addbutton {
 	background-color: white;
 	vertical-align: middle;
 	display: inline-block;
-	width: 88%;
+	width: 90%;
 	font-size: .90rem;
 	font-weight: 700;
+	padding: 1px 0px;
 	color: silver;
 	text-align: left;
 	margin: 0 auto;
 }
 
+@media (max-width: 450px) {
+	.heading {
+		font-size: .75rem;
+	}
 
-
-@media (max-width: 500px) {
 	.location {
-		width: 25%;
+		width: 20%;
+		font-size: .75rem;
 	}
 	.item {
-		width: 30%;
+		width: 45%;
+		font-size: .75rem;
 	}
 	.note {
-		width: 23%;
+		width: 13%;
+		font-size: .75rem;
 	}
-	button {font-size: .75rem;
+	select {
+		font-size: .75rem;
+	}
+	input {
+		font-size: .75rem;
+	}
+	button#addbutton {
+		font-size: .75rem;
+		width: 40px;
+	}
+	.entry {
+		font-size: .75rem;
+		width: 88%;
+	}
+	.list-area {
+		width: 90%;
+	}
+	.details, .details-done {
+		font-size: .75rem;
+	}
+	.check {
+		font-size: .9rem;
+	}
+	.trash {
+		font-size: .9rem;
+	}
+}
+
+@media (min-width: 451px) and (max-width: 700px) {
+	.heading {
+		font-size: .75rem;
+	}
+
+	.location {
+		width: 20%;
+		font-size: .75rem;
+	}
+	.item {
+		width: 40%;
+		font-size: .75rem;
+	}
+	.note {
+		width: 13%;
+		font-size: .75rem;
+	}
+	select {
+		font-size: .75rem;
+	}
+	input {
+		font-size: .75rem;
+	}
+	button#addbutton {
+		font-size: .75rem;
+		width: 40px;
 	}
 	.entry {
 		font-size: .75rem;
 	}
-	.ind-location {
-		width: 22%;
+	.list-area {
+		width: 84%;
 	}
-	.ind-item {
-		width: 30%;
+	.details, .details-done {
+		font-size: .75rem;
 	}
-	.ind-note {
-		width: 23%;
+	.check {
+		font-size: .9rem;
+	}
+	.trash {
+		font-size: .9rem;
 	}
 }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 701px) and (max-width: 850px) {
+	.heading {
+		font-size: .85rem;
+	}
+
 	.location {
-		width: 20%;
+		width: 15%;
+		font-size: .85rem;
 	}
 	.item {
-		width: 25%;
+		width: 40%;
+		font-size: .85rem;
 	}
 	.note {
-		width: 18%;
+		width: 13%;
+		font-size: .85rem;
 	}
-	button {font-size: .80rem;
+	select {
+		font-size: .85rem;
+	}
+	input {
+		font-size: .85rem;
+	}
+	button#addbutton {
+		font-size: .85rem;
+		width: 40px;
 	}
 	.entry {
-		font-size: .80rem;
+		font-size: .85rem;
 	}
-	.ind-location {
-		width: 17%;
+	.list-area {
+		width: 78%;
 	}
-	.ind-item {
-		width: 25%;
+	.details, .details-done {
+		font-size: .85rem;
 	}
-	.ind-note {
-		width: 18%;
+	.check {
+		font-size: 1.0rem;
 	}
+	.trash {
+		font-size: 1.0rem;
+	}
+
 }
 
 
-/*  background-size: cover;
-	background: -webkit-linear-gradient(#2B78E4, #2B7850); /* For Safari 5.1 to 6.0 */
-   
+
+
+
+
+
+
+
