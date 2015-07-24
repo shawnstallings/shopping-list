@@ -20,19 +20,14 @@ body {
 }
 
 div.logo {
-	content: url("../images/lightninglogo.png");
+	background-image: url("../images/lightninglogo.png");
+	background-size: 100%;
+	background-position: center;
 	width: 383px;
-	height: auto;
-	margin: 0 auto;
-	padding-top: 3rem;
-}
-
-div.logo:after { /*this is for firefox*/
-	content: url("../images/lightninglogo.png");
-	width: 383px;
-	height: auto;
-	margin: 0 auto;
-	padding-top: 3rem;
+	height: 115px;
+	display: block;
+	background-repeat: no-repeat;
+	margin: 4rem auto 1rem;
 }
 
 .heading {
@@ -44,7 +39,7 @@ div.logo:after { /*this is for firefox*/
 }
 
 .location {
-	width: 15%;
+	width: 13%;
 	display: inline-block;
 	margin: 0 auto;		
 }
@@ -63,7 +58,7 @@ div.logo:after { /*this is for firefox*/
 
 .list-area {
 	display: inline-block;
-	width: 55%;
+	width: 53%;
 	margin: .25rem auto;
 }
 
@@ -149,7 +144,7 @@ button#addbutton {
 	background-color: white;
 	vertical-align: middle;
 	display: inline-block;
-	width: 90%;
+	width: 85%;
 	font-size: .90rem;
 	font-weight: 700;
 	padding: 1px 0px;
@@ -161,7 +156,7 @@ button#addbutton {
 	background-color: white;
 	vertical-align: middle;
 	display: inline-block;
-	width: 90%;
+	width: 85%;
 	font-size: .90rem;
 	font-weight: 700;
 	padding: 1px 0px;
@@ -170,7 +165,57 @@ button#addbutton {
 	margin: 0 auto;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 375px) {
+	div.logo {
+		background-size: 80%;
+		width: 300px;
+		margin: 2rem auto 0;
+	}
+	.heading {
+		font-size: .65rem;
+	}
+
+	.location {
+		width: 20%;
+		font-size: .65rem;
+	}
+	.item {
+		width: 45%;
+		font-size: .65rem;
+	}
+	.note {
+		width: 13%;
+		font-size: .65rem;
+	}
+	select {
+		font-size: .65rem;
+	}
+	input {
+		font-size: .65rem;
+	}
+	button#addbutton {
+		font-size: .65rem;
+		width: 40px;
+	}
+	.entry {
+		font-size: .65rem;
+		width: 88%;
+	}
+	.list-area {
+		width: 90%;
+	}
+	.details, .details-done {
+		font-size: .65rem;
+	}
+	.check {
+		font-size: .9rem;
+	}
+	.trash {
+		font-size: .9rem;
+	}
+}
+
+@media (min-width: 376px) and (max-width: 450px) {
 	.heading {
 		font-size: .75rem;
 	}
