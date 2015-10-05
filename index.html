@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Lightning List</title>
 	<link rel="stylesheet" type="text/css" href="css/normalz.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -9,41 +10,38 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="logo">
+	<div>
+		<img src="images/lightninglogo.png" alt="Lightning List Logo" class="logo">
 	</div>
 	<div class="location">
-		<p class="heading">Store/Location</p>
+		<p class="heading">Store</p>
 	</div>
 	<div class="item">
 		<p class="heading">Item</p>
 	</div>
-	<div class="note">
-		<p class="heading">Qty/Note</p></div>
 	<div id="fields">
 		<form>
-		<div class="location">
-			<select id="store-entry">
-				<option>Grocery</option>
-				<option>Hardware</option>
-				<option>Pet</option>
-				<option>Post Office</option>
-				<option>School</option>
-				<option>Specialty A</option>
-				<option>Specialty B</option>
-				<option>Specialty C</option>
-			</select>
-		</div>
-		<div class="item">
-			<input id="item-entry" type="text" name="description" autocomplete="off">
-			</input>
-		</div>
-		<div class="note">
-			<input id="note-entry" type="text" name="qtynote" autocomplete="off"></input>
-		</div>
+			<div class="location">
+				<select id="store-entry">
+					<option>Grocery</option>
+					<option>Hardware</option>
+					<option>Pet</option>
+					<option>Post Office</option>
+					<option>School</option>
+					<option>Specialty A</option>
+					<option>Specialty B</option>
+					<option>Specialty C</option>
+				</select>
+			</div>
+			<div class="item">
+				<input id="item-entry" type="text" name="description" autocomplete="off">
+				</input>
+			</div>
 		</form>
 	</div>
 		<div class="add">
-				<p class="heading">Enter items and use "Tab" to move across fields.<br>Use "Enter Key" or "Add" button to create list.</p> <button id="addbutton">Add</button>
+			<button id="addbutton">Add</button>
+			<p class="heading">Drag items up or down.</p>
 		</div>
 		<div id="sortable" class="list-area">
 		</div>

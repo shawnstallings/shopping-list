@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
 	/*Defining global variables*/
-	console.log('Welcome to console');
 	var submissions = 0;
 	var checkMark = '<p class="check"><i class="fa fa-check-square"></i></p>';
 	var xMark ='<p class="trash"><i class="fa fa-trash"></i></p>';
@@ -11,8 +10,9 @@ $(document).ready(function() {
 			postItem();
 		});
 
-		$('#item-entry, #note-entry').keypress(function(e) {
+		$('#item-entry').keypress(function(e) {
 			if (e.which == 13) {
+			e.preventDefault();
 			postItem();
 			$('#item-entry').focus();
 			}
@@ -22,11 +22,9 @@ $(document).ready(function() {
 function postItem() {
 	var store = $('#store-entry').val();
 	var item = $('#item-entry').val();
-	var note = $('#note-entry').val();
-	var work = '<div class="entry">' + xMark + "<p class='details'>" + store + " :&nbsp&nbsp&nbsp" + item + " - " + note + "</p>" + checkMark + '</div>';
+	var work = '<div class="entry">' + xMark + "<p class='details'>" + store + " : &nbsp&nbsp" + item + "</p>" + checkMark + '</div>';
 		$('.list-area').append(work);
 		$('#item-entry').val('')
-		$('#note-entry').val('')
 	};
 
 // Change class for entry when user clicks checkMark icon
