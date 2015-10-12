@@ -42,7 +42,7 @@ $(document).on("click", ".trash", function() {
 $(function() {
 
 		$('#sortable').sortable({ 
-			delay: 700,
+			delay: 500,
 			placeholder: "ui-sortable-placeholder",
 			opacity: 0.8,
 			cursor: "move",

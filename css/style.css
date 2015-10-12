@@ -95,7 +95,7 @@ button#addbutton {
 .trash {
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	color: #82030F;
 	text-shadow: 1px 1px silver;
 	float: left;
@@ -105,7 +105,7 @@ button#addbutton {
 .check {
 	display: inline-block;
 	vertical-align: bottom;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	color: #298207;
 	text-shadow: 1px 1px silver;
 	float: right;
@@ -117,9 +117,9 @@ button#addbutton {
 	vertical-align: middle;
 	display: inline-block;
 	width: 100%;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-weight: 700;
-	padding: 1px 0px;
+	padding: 3px 0 0;
 	text-align: center;
 	border-radius: 2px;
 	box-shadow: 2px 2px 4px #101947;
@@ -175,6 +175,9 @@ button#addbutton {
 	.list-area {
 		width: 65%;
 	}
+	.details, .details-done {
+		font-size: 1.25rem;
+	}
 }
 @media screen and (min-width: 800px) {
 	.logo {
@@ -212,12 +215,6 @@ button#addbutton {
 		font-size: 1.5rem;
 		width: 80%;
 		padding: 0 0 3px 0;
-	}
-	.check {
-		font-size: 1.5rem;
-	}
-	.trash {
-		font-size: 1.5rem;
 	}
 }
 @media screen and (min-width: 1200px) {
