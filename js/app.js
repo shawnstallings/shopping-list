@@ -42,11 +42,10 @@ $(document).on("click", ".trash", function() {
 $(function() {
 
 		$('#sortable').sortable({ 
-			delay: 500,
-			placeholder: "ui-sortable-placeholder",
+			handle: '.details',
+			delay: 200,
 			opacity: 0.8,
 			cursor: "move",
-			placeholder: "ui-state-highlight",
 			revert: 1.0				
 		});	
 	});
