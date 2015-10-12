@@ -42,9 +42,12 @@ $(function() {
 
 		$('#sortable').sortable({ 
 			placeholder: "ui-sortable-placeholder",
+			opacity: 0.8,
 			cursor: "move",
+			placeholder: "ui-state-highlight",
+			revert: 1.0
 		});
-		
+		$('#sortable').disableSelection();		
 	});	
 });
 
