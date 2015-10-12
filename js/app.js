@@ -8,6 +8,7 @@ $(document).ready(function() {
 // User can click add button or press enter key to add list
 		$('#addbutton').on("click", function(event) {
 			postItem();
+			$('#tip').css('display', 'block');
 		});
 
 		$('#item-entry').keypress(function(e) {
@@ -34,20 +35,20 @@ $(document).on("click", ".check", function(click) {
 
 // Allow user to delete an item by clicking on trash icon
 $(document).on("click", ".trash", function() {
-		$(this).parent().effect("clip");
+		$(this).parent().remove();
 	})
 
 // Allow user to click and drag an item to sort the list
 $(function() {
 
 		$('#sortable').sortable({ 
+			delay: 200,
 			placeholder: "ui-sortable-placeholder",
 			opacity: 0.8,
 			cursor: "move",
 			placeholder: "ui-state-highlight",
-			revert: 1.0
-		});
-		$('#sortable').disableSelection();		
-	});	
+			revert: 1.0				
+		});	
+	});
 });
 

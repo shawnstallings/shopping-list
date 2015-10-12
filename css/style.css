@@ -35,6 +35,9 @@ p {
 	font-weight: 700;
 	text-align: center;
 }
+#fields {
+	margin-bottom: 1.25rem;
+}
 .location {
 	width: 35%;
 	display: inline-block;
