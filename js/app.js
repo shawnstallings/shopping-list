@@ -7,8 +7,16 @@ $(document).ready(function() {
 
 // User can click add button or press enter key to add list
 		$('#addbutton').on("click", function(event) {
-			postItem();
-			$('#tip').css('display', 'block');
+			$('.error').css('display', 'none');
+
+			if ($.trim($('#item-entry').val()) != '') {
+				$('.tip').css('display', 'block');
+				postItem();
+			}
+			else {
+				$('.error').css('display', 'block');
+			}
+			
 		});
 
 		$('#item-entry').keypress(function(e) {
@@ -16,6 +24,7 @@ $(document).ready(function() {
 			e.preventDefault();
 			postItem();
 			$('#item-entry').focus();
+			$('.error').css('display', 'none');
 			}
 		});
 
@@ -28,9 +37,16 @@ function postItem() {
 		$('#item-entry').val('')
 	};
 
+// Allow user to clear the entire list by clicking the clear list button
+$(document).on("click", "#clearbutton", function() {
+		$('.entry').remove();
+		$('.tip').css('display', 'none');
+	})
+
+
 // Change class for entry when user clicks checkMark icon
 $(document).on("click", ".check", function(click) {
-		$(this).prev('p').effect("highlight").toggleClass('details-done');
+		$(this).toggleClass('checked').prev('p').effect("highlight").toggleClass('details-done');
 	})
 
 // Allow user to delete an item by clicking on trash icon
